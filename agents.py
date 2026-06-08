@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 #model setup 
-llm = ChatMistralAI(model = "mistral-small-latest",temperature=0)
+llm = ChatMistralAI(model = "mistral-small-latest",temperature=0, api_key=st.secrets["MISTRAL_API_KEY"])
 
 
 #1st agent 
