@@ -10,7 +10,7 @@ import streamlit as st
 load_dotenv()
 
 #model setup 
-llm = ChatMistralAI(model = "mistral-small-latest",temperature=0, api_key=st.secrets["hTZS10grV0COno67Q4FzoEqohprzHvDc"])
+llm = ChatMistralAI(model = "mistral-small-latest",temperature=0, api_key=st.secrets["MISTRAL_API_KEY"])
 
 
 #1st agent 
