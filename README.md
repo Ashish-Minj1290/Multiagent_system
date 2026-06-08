@@ -5,7 +5,8 @@
 
 > **Deep Intelligence on Any Topic. Four Autonomous Agents. One Unified Pipeline.**
 
-![ORAEON Banner](./assets/oraeon-banner.png)
+![ORAEON Banner](<img width="1903" height="908" alt="Screenshot 2026-06-08 203022" src="https://github.com/user-attachments/assets/958b9522-c156-464c-9e96-50f946efca3a" />
+)
 
 🌐 **Live Demo:**
 **[https://multiagentsystem-ippyvdh9y9vbur8zkquxbu.streamlit.app/](https://multiagentsystem-ippyvdh9y9vbur8zkquxbu.streamlit.app/)**
