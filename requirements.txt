@@ -8,6 +8,9 @@ langchain_mistralai
 # OpenAI
 openai>=1.30.0
 
+#mistralAi
+mistral-small-latest
+
 # Tavily Search Tool
 tavily-python>=0.3.0
 
