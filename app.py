@@ -7,7 +7,7 @@ import os
 #  PAGE CONFIG
 # ─────────────────────────────────────────────────────────────────────────────
 st.set_page_config(
-    page_title="ORACLE // Research Intel System",
+    page_title="ORAEON // Research Intel System",
     page_icon="⬡",
     layout="wide",
     initial_sidebar_state="collapsed",
@@ -96,7 +96,7 @@ body { animation: phosphor-flicker 10s infinite; }
     background: #0b0900;
     animation: sweep-in 0.5s ease both;
 }
-.oracle-logo {
+.oraeon-logo {
     font-family: 'Archivo Black', sans-serif;
     font-size: 1.35rem;
     letter-spacing: 0.3em;
@@ -104,7 +104,7 @@ body { animation: phosphor-flicker 10s infinite; }
     text-shadow: 0 0 30px #e8a80050, 0 0 60px #e8a80020;
     animation: glow-text 4s ease-in-out infinite;
 }
-.oracle-logo em { font-style: normal; color: #ff6b1a; }
+.oraeon-logo em { font-style: normal; color: #ff6b1a; }
 .top-bar-center {
     font-size: 0.58rem;
     letter-spacing: 0.22em;
@@ -582,7 +582,7 @@ body { animation: phosphor-flicker 10s infinite; }
 # ─────────────────────────────────────────────────────────────────────────────
 st.markdown(f"""
 <div class="top-bar">
-  <div class="oracle-logo">ORA<em>EON</em></div>
+  <div class="oraeon-logo">ORA<em>EON</em></div>
   <div class="top-bar-center">MULTIAGENT RESEARCH INTEL SYSTEM // v2.1</div>
   <div class="top-bar-right">
     <span class="status-dot"></span>SYSTEM ONLINE &nbsp;|&nbsp; {time.strftime("%Y.%m.%d")}<br>
@@ -621,12 +621,12 @@ with left_col:
         <div class="cmd-dot cmd-dot-r"></div>
         <div class="cmd-dot cmd-dot-y"></div>
         <div class="cmd-dot cmd-dot-g"></div>
-        <span class="cmd-title-text">oracle@research-node ~ $</span>
+        <span class="cmd-title-text">oraeon@research-node ~ $</span>
       </div>
       <div class="cmd-body">
         <div class="cmd-prompt">
           <span class="cmd-prompt-sym">▶</span>
-          oracle // enter research directive
+          oraeon // enter research directive
         </div>
     """, unsafe_allow_html=True)
 
@@ -830,7 +830,7 @@ if run_btn:
     st.download_button(
         label="⬡  DOWNLOAD BRIEFING  (.md)",
         data=report_str,
-        file_name=f"oracle_{topic[:35].replace(' ','_').lower()}.md",
+        file_name=f"oraeon_{topic[:35].replace(' ','_').lower()}.md",
         mime="text/markdown",
     )
 
