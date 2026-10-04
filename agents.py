@@ -1,6 +1,7 @@
 from langchain.agents import create_agent
 #from langchain_openai import ChatOpenAI
-from langchain_mistralai import ChatMistralAI
+#from langchain_mistralai import ChatMistralAI
+from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
 from langchain_core.output_parsers import StrOutputParser
 from tools import web_search , scrape_url 
@@ -10,7 +11,7 @@ import streamlit as st
 load_dotenv()
 
 #model setup 
-llm = ChatMistralAI(model = "glm-5-2",temperature=0, api_key=st.secrets["MISTRAL_API_KEY"])
+llm = ChatGoogleGenerativeAI(model = "gemini-1.5-flash",temperature=0, api_key=st.secrets["MISTRAL_API_KEY"])
 
 
 #1st agent 
