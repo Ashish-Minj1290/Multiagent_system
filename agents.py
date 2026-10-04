@@ -11,7 +11,7 @@ import streamlit as st
 load_dotenv()
 
 #model setup 
-llm = ChatGoogleGenerativeAI(model = "gemini-2.0-flash",temperature=0, api_key=st.secrets["GEMINI_API_KEY"])
+llm = ChatGoogleGenerativeAI(model = "gemini-3.8-flash",temperature=0, api_key=st.secrets["GEMINI_API_KEY"])
 
 
 #1st agent 
