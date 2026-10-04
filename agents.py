@@ -16,7 +16,7 @@ api_key = st.secrets["GEMINI_API_KEY"]
 
 # Primary model
 primary_llm = ChatGoogleGenerativeAI(
-    model="gemini-3.1-pro",
+    model="gemini-3.5-flash",
     google_api_key=api_key,
     max_retries=2,
     timeout=60,
@@ -24,7 +24,7 @@ primary_llm = ChatGoogleGenerativeAI(
 
 # Alternative fallback model (lite / pro models typically run on separate queues)
 fallback_llm = ChatGoogleGenerativeAI(
-    model="gemini-2.5-pro", google_api_key=api_key, max_retries=2
+    model="gemini-3.5-flash-lite", google_api_key=api_key, max_retries=2
 )
 
 # Use this combined 'llm' in create_agent(...)
