@@ -1,5 +1,5 @@
 from langchain.agents import create_agent
-#from langchain_openai import ChatOpenAI
+from langchain_openai import ChatOpenAI
 #from langchain_mistralai import ChatMistralAI
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import ChatPromptTemplate
@@ -11,8 +11,13 @@ import streamlit as st
 load_dotenv()
 
 #model setup 
-llm = ChatGoogleGenerativeAI(model = "gemini-2.0-flash-lite",temperature=0, api_key=st.secrets["GEMINI_API_KEY"])
-
+#llm = ChatGoogleGenerativeAI(model = "gemini-2.0-flash-lite",temperature=0, api_key=st.secrets["GEMINI_API_KEY"])
+llm = ChatOpenAI(
+    model="nemotron-3.5-lightning-free",  
+    temperature=0,
+    api_key=st.secrets["NARAROUTER_API_KEY"],
+    base_url="https://router.bynara.id/v1",
+)
 
 #1st agent 
 def build_search_agent():
